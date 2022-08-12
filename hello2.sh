@@ -1,7 +1,7 @@
-count=11
-if [ $count -eq 10 ]
+word=abc
+if [ $word = "abc" ]
 then
-  echo "the value is 10"
+  echo "the value is abc"
   else
-    echo "the value is not 10"
+    echo "the value is not abc"
   fi
