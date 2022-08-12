@@ -1,10 +1,17 @@
 #! /bin/bash
-echo -e "enter the name of the file: \c"
-read filename
+echo -e "Enter the file name \c"
+read file_name
 
-if [ -z $filename ]
+if [ -f $file_name ]
 then
-  echo "$filename found"
+  if [ -w $file_name ]
+    then
+      echo "Type some text data. To quit press ctrl+d"
+      cat >> $file_name
+      else
+        echo " the file is not writtable"
+        fi
+
   else
-    echo "$filename not found"
-    fi
+    echo "file not exist"
+fi
