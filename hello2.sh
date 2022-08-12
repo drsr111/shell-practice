@@ -2,7 +2,7 @@
 echo -e "enter the name of the file: \c"
 read filename
 
-if [ -e $filename ]
+if [ -z $filename ]
 then
   echo "$filename found"
   else
