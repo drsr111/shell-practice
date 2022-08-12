@@ -1,7 +1,3 @@
-echo "Enter name: "
-read -p 'user name: ' user_var
-read -sp 'password: ' user_pass
-
-echo "user_var : $user_var"
-echo
-echo "user_pass : $user_pass"
+echo "enter names: "
+read -a names
+echo "names: ${names[0]}, ${names[1]}"
