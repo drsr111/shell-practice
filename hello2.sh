@@ -1,7 +1,10 @@
-word=abc
-if [ $word != 'abc' ]
+#! /bin/bash
+echo -e "enter the name of the file: \c"
+read filename
+
+if [ -e $filename ]
 then
-  echo "the value is abc"
+  echo "$filename found"
   else
-    echo "the value is not abc"
-  fi
+    echo "$filename not found"
+    fi
