@@ -1,5 +1,5 @@
 word=abc
-if [ $word == 'abc' ]
+if [ $word != 'abc' ]
 then
   echo "the value is abc"
   else
